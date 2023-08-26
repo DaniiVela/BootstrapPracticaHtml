@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="Imag/Blog.png">
+    <style>
+      body {
+          background-color: rgb(172, 184, 189);
+        }
+        .card {
+            background: linear-gradient(to right, #dddddd, #f0f0f0);
+            border-radius: 15px;
+        }
+  </style>
+</head>
+<body class="container">
+
+  <div class="alert alert-dark" role="alert">
+      <h3 class="fw-bold text-center" >Bienvenidos a mi Blog!</h3>
+  </div>
+
+  <nav class="navbar navbar-expand-lg" style="background-color:rgb(197, 206, 210);">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Tema Libre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Cv</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Despegable
+            </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="TemaLibre.html">Tema Libre</a></li>
+          <li><a class="dropdown-item" href="Cv.html">Cv</a></li>
+          <li><hr class="dropdown-divider"></li>
+        </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+  </div>
+  </div>
+  </nav>
+  
+    <p>
+      <h3 class="fw-bold text-center">Mi primer Blog</h3><br>
+      <h2 class="fw-bold text-center">Cositas que te hacen Feliz</h2>
+      <img src="Imag/Encanto.png" style="width: 1100px; height: 380px">
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+      <div class="card h-100">
+          <img src="Imag/futbol.png" class="card-img-top">
+      <div class="card-body">
+          <h5 class="card-title text-center">Deporte.</h5>
+          <p class="card-text">La actividad física regular puede mejorar la fuerza muscular y aumentar la resistencia. El ejercicio suministra oxígeno y nutrientes a los tejidos y ayuda a que el sistema cardiovascular funcione de manera más eficiente. Y cuando tu salud cardíaca y pulmonar mejora, tienes más energía para hacer las tareas diarias.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="Imag/videojuego.png" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title text-center">Entretenimiento.</h5>
+            <p class="card-text">Existen muchas estrategias de entretenimiento en la actualidad lo que hace obtener un mayor disfrute de la vida, lo cual repercute en una disposición más abierta a las nuevas experiencias, más paciencia y mejor ánimo. Fomento del pensamiento lateral y las ideas originales. Oportunidad de conocer personas nuevas y entablar relaciones sociales significativas.</p>
+      </div>
+      </div>
+      </div>
+    
+      <div class="col">
+      <div class="card h-100">
+          <img src="Imag/perrito.png" class="card-img-top">
+      <div class="card-body">
+            <h5 class="card-title text-center">Mascotas.</h5>
+            <p class="card-text">Las mascotas pueden disminuir el estrés y la sensación de soledad, mejorar la salud del corazón e, incluso, ayudar a los niños con sus habilidades emocionales y sociales. Así lo asegura el NIH (National Institutes of Health), grupo de instituciones del gobierno de Estados Unidos dedicado a la investigación médica.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div> 
+    <br>
+
+    <h4 class="text-center">SUSCRÍBETE</h4>
+
+  <form action="procesar_inscripcion.php" method="post" class="text-center">
+    <input type="email" name="email" placeholder="Ingresa tu email" required style="width: 900px;"><br>
+    <br><button type="submit" style="width: 700px; background-color: rgb(105, 107, 102);">Unirse</button>
+  </form>
+<br>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
